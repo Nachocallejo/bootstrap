@@ -3,298 +3,90 @@ a {
 }
 
 a:visited {
-    color: #f7edcb;
+    color: black;
 }
 
 img {
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 40%;
+    max-height: 20%;
 }
 
-body {
-    background: linear-gradient(to bottom, rgb(39, 39, 39), #f7edcb, rgb(39, 39, 39));
-    font-family: "Roboto";
-    color: white;
-
-}
-
-ul {
-    list-style: none;
-}
-
-header {
-    grid-template-areas: header;
-}
-
-.Textoimagenesindex {
-    grid-template-areas: Texto;
-}
-
-footer {
-    grid-template-areas: footer;
-}
-
-#Main {
-    display: grid;
-}
-
-@media screen and (min-width: 320px) {
-
-    #Main {
-        grid-template-columns: auto;
-        grid-template-rows: 5% auto 5%;
-        grid-column-gap: 10px;
-        grid-template-areas: "header""Texto""footer";
-    }
-
+@media screen and (min-width:320px) {
     header {
-        z-index: 1;
-        display: grid;
-        grid-template-columns: 60% auto;
-      /*  background-color: rgb(39, 39, 39); */
-        color: #f7edcb;
-        font-size: medium;
-        font-style: bold;
-        text-align: left;
-        justify-items: space-evenly;
-        align-content: bottom;
-    }
-
-    #menuBurger {
-
-        position: relative;
-        left: 100px;
-        top: 32px;
-
-    }
-
-    .Textoimagenesindex {
         color: black;
-        overflow: hidden;
-        border-style: solid;
-        border-width: 1px;
-        background-color: #f7edcbd8;
-        text-align: center;
+        border-bottom: 0.50rem solid #EDCDBB;
+        background-color: #fdf7e2;
     }
 
-    .footer {
-        color: #f7edcb;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-
-    }
-
-    #facebooklogo2 {
-        position: relative;
-        top: 15px;
-    }
-
-    #instagramlogo2 {
-        position: relative;
-        top: 15px;
-    }
-
-
-    .serviciotext {
-        background-color: #f7edcb;
-        color: black;
-        text-align: center;
-    }
-
-    .nosotros {
-        background-color: #f7edcb;
-        color: black;
-        margin-top: 30px;
-        text-align: center;
-    }
-
-    .ubicacion {
-        background-color: #f7edcb;
-        color: black;
-        text-align: center;
-        margin-top: 25px;
-    }
-
-    .formcontacto {
-        background-color: #f7edcb;
-        color: black;
-        margin-top: 40px;
-        height: auto;
-        text-align: left;
-        border: 1px;
-    }
-
-    .Lista1,
-    .Lista2,
-    #facebooklogo,
-    #instagramlogo,
-    .footer--mapa,
-    .footer--redes,
-    .imagencontacto {
-        display: none;
-    }
-
-}
-
-@media screen and (min-width: 1200px) {
-    #Main {
-        grid-template-columns: auto;
-        grid-template-rows: 8% auto 13%;
-        grid-column-gap: 10px;
-        grid-template-areas: "header""Texto""footer";
-    }
-
-    header {
-        z-index: 1;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        /*  position: sticky;
-        top: 0;  */
-    }
-
-    header h1 {
-        position: relative;
-        bottom: 5px;
-        padding-left: 10px;
-
-    }
-
-    .Lista1 {
-        width: 1000px;
-        display: flex;
-        justify-content: space-evenly;
-        position: relative;
-        top: 12px;
-    }
-
-    #facebooklogo {
-        display: inherit;
-        position: relative;
-        bottom: 40px;
-        left: 1000px;
-    }
-
-    #instagramlogo {
-        display: inherit;
-        position: relative;
-        bottom: 20px;
-        left: 1000px;
-    }
-
-    .Textoimagenesindex {
+    .lead {
         color: black;
         overflow: visible;
         border-style: solid;
         border-width: 0px;
-        background-color: #f7edcbd8;
-        text-align: left;
-        padding-left: 10px;
+        background-color: #ffffff;
+        text-align: center;
         padding-top: 10px;
     }
 
-    .Textoimagenesindex img {
-        width: 400px;
-        height: 250px;
+    footer {
+        color: black;
+        border-top: 0.50rem solid #EDCDBB;
+        background-color: #fdf7e2;
+        padding-top: 20px;
     }
 
-    .footer {
-        color: #f7edcb;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-
-    #facebooklogo2 {
-        position: relative;
-        top: 35px;
-        left: 120px;
-
-    }
-
-    #instagramlogo2 {
-        position: relative;
-        top: 80px;
-        left: 100px;
-
-    }
-
-    .footer--aqua {
-        position: relative;
-        left: 50px;
-    }
-
-    .footer--mapa {
-        display: inherit;
-    }
-
-    .footer--mapa iframe {
-        position: relative;
-        top: 40px;
-        right: 120px;
-    }
-
-    #menuBurger {
+    nav li,
+    #facebooklogo,
+    #instagramlogo,
+    .mapa {
         display: none;
     }
 
-    .serviciotext {
+}
+
+@media screen and (min-width:1200px) {
+
+    header {
+        color: black;
+        border-bottom: 0.50rem solid #EDCDBB;
+        background-color: #fdf7e2;
+    }
+
+    .lead {
+        color: black;
+        overflow: visible;
+        border-style: solid;
+        border-width: 0px;
+        background-color: #ffffff;
         text-align: left;
+        padding-bottom: 10px;
         padding-left: 10px;
+    }
+
+    footer {
+        color: black;
+        border-top: 0.50rem solid #EDCDBB;
+        background-color: #fdf7e2;
+        padding-top: 20px;
+        padding-bottom: 30px;
     }
 
     .nosotros {
-        background-color: #f7edcb;
-        color: black;
-        text-align: left;
+        padding-bottom: 20px;
+        padding-top: 20px;
         padding-left: 10px;
     }
 
-    .headers {
-        padding-top: 40px;
-    }
-
-    .ubicacion {
-        background-color: #f7edcb;
-        color: black;
+    .nosotros h2,h3 {
         text-align: center;
     }
-
-    .input {
-        padding: 2px;
+    #menuBurger {
+        display: none;
     }
-
-    .input1 {
-        color: #a7a7a7;
-        font-size: 20px;
-        font-weight: 500;
-        padding: 15px 15px;
-        background: rgba(0, 0, 0, 0);
-        border: 1.5px solid;
-        border-color: #000000;
-        transition: all 1.5s ease;
-        position: relative;
-    }
-
-    .input1:hover {
-        background: #000000;
-        color: #a7a7a7;
-    }
-
-
-    .imagencontacto {
+    nav li,
+    #facebooklogo,
+    #instagramlogo,
+    .mapa {
         display: inherit;
-        height: 400px;
-        width: 350px;
-    }
-
-    .formcontacto {
-        padding-left: 50px;
-        justify-content: center;
-        background-color: #f7edcb;
-        color: black;
-        border: 21px;
     }
 }
