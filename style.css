@@ -8,7 +8,7 @@ a:visited {
 
 img {
     max-width: 40%;
-    max-height: 20%;
+    max-height: 10%;
 }
 
 @media screen and (min-width:320px) {
@@ -28,6 +28,16 @@ img {
         padding-top: 10px;
     }
 
+    .nosotros {
+        color: black;
+        overflow: visible;
+        border-style: solid;
+        border-width: 0px;
+        background-color: #ffffff;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
     footer {
         color: black;
         border-top: 0.50rem solid #EDCDBB;
@@ -38,10 +48,10 @@ img {
     nav li,
     #facebooklogo,
     #instagramlogo,
-    .mapa {
+    .mapa
+     {
         display: none;
     }
-
 }
 
 @media screen and (min-width:1200px) {
@@ -76,8 +86,7 @@ img {
         padding-top: 20px;
         padding-left: 10px;
     }
-
-    .nosotros h2,h3 {
+       .nosotros h2,h3 {
         text-align: center;
     }
     #menuBurger {
